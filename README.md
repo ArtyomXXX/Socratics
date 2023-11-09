@@ -21,4 +21,4 @@
     gulp build
 ```
 
-## Ссылка: [Посмотреть](https://artyomxxx.github.io/Socratics/)
+## Ссылка: [GitHub Pages](https://artyomxxx.github.io/Socratics/)
