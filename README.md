@@ -18,7 +18,7 @@
 ```
 После установки всех необходимых зависимостей для build сбоки запустите команду:
 ```JavaScript
-    gulp docs
+    gulp build
 ```
 
 ## Ссылка: [Посмотреть](https://artyomxxx.github.io/Socratics/)
