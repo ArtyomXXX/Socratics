@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="../fonts/RobotoSlab/stylesheet.css">
+  <link rel="stylesheet" href="../fonts/Inter/stylesheet.css">
+  <link rel="shortcut icon" href="../img/logo/shortcut-icon.png" type="image/x-icon">
+  <title>Сократика</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <img class="logo" src="../img/logo/Logo.png" alt="Сократика">
+    </div>
+  </header>
+  <main>
+    <section class="form-section">
+      <div class="container">
+        <img class="form-section__img" src="../img/bg/bg-img.png" alt="Изображение">
+        <form class="form">
+    <h2 class="form__title">01 Заполни форму</h2>
+    <div class="form__inputs-row">
+        <div class="input-field-border input-border">
+            <label for="input-field" class="label">Тема урока</label>
+            <div class="input-wrapper" id="input-wrapper">
+                <input class="input-field input" id="input-field" type="text" placeholder="Напиши что-то конкретное">
+                <img class="input-reset-button" src="src/img/reset-icon.svg" alt="">
+            </div>
+        </div>
+
+        <div class="input-field-border select-border">
+            <label for="select" class="label">Класс</label>
+            <select class="input-field select" id="select" title="Выбрать класс">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="chips-container" id="chips-container"></div>
+    <p class="show-more" id="show-more-switch">
+        <span>+</span> Показать больше вариантов
+    </p>
+
+    <div class="textarea-wrapper">
+        <div class="input-field-border" id="textarea-border">
+            <label for="textarea" class="label textarea-label">Цель урока</label>
+            <textarea class="input-field textarea" id="textarea" placeholder="Напиши свою учебную цель"></textarea>
+        </div>
+        <div class="textarea-characters">
+            <span id="error-message">Превышен лимит</span>
+            <span id="characters"></span>
+        </div>
+    </div>
+
+    <div class="form__buttons">
+        <button class="form__button form__button_back" type="button">
+            Назад
+        </button>
+        <button class="form__button form__button_next" type="button">
+            Следующий шаг
+        </button>
+    </div>
+</form>
+
+
+
+
+
+
+<!-- <div class="container">
+            <label for="inputField1">Input:</label>
+            <input type="text" id="inputField1">
+          
+            <label for="selectField">Select:</label>
+            <select id="selectField">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+            </select>
+          
+            <label for="textareaField">Textarea:</label>
+            <textarea id="textareaField"></textarea>
+        </div> -->
+
+<!-- <div class="container">
+            <label for="inputElement">Input:</label>
+            <input type="text" id="inputElement">
+          
+            <label for="selectElement">Select:</label>
+            <select id="selectElement">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          
+            <label for="textareaElement">Textarea:</label>
+            <textarea id="textareaElement"></textarea>
+        </div> -->
+
+
+
+<!-- <div class="container">
+  <label for="input1" class="red">Input:</label>
+  <input type="text" id="input1">
+
+  <br><br>
+
+  <label for="select1" class="red">Select:</label>
+  <select id="select1">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+  <br><br>
+
+  <label for="textarea1" class="red">Textarea:</label>
+  <textarea id="textarea1" rows="4" cols="50"></textarea>
+
+        </div>
+
+
+
+<form action="#" class="form">
+    <div class="form__wrapper">
+        <label class="form__label">
+            <input class="input-reset form__input" type="text" name="lessonTopic" placeholder="Напиши что-то конкретное"
+                autocomplete="off" required>
+            <span id="clearInput" class="form__label-clear clear-input">
+                <svg class="form__label-clear-icon">
+                    <use xlink:href="img/sprite.svg#clear"></use>
+                </svg>
+            </span>
+            <span class="form__label-title">
+                Тема урока
+            </span>
+        </label>
+
+        <label class="form__class">
+            <select class="form__class-select" name="classNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span class="arrow"></span>
+            <span class="form__class-title">
+                Класс
+            </span>
+        </label>
+    </div>
+
+    <div class="form__tags">
+        <button class="form__tags-tag tag btn-reset" type="button">Генетика</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Анатомия человека</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Вулканы</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Зимние виды спорта</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Радуга</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Индийская культура</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Пеший туризм</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Философия</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Вселенная</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Здоровые привычки</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Бабочки</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Белые медведи</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Экономика</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Финансовая грамотность</button>
+        <button class="form__tags-tag tag btn-reset" type="button">Фотосинтез</button>
+    </div>
+    <button id="showMoreTags" class="form__tags-button btn-reset" type="button">
+        <svg class="form__tags-button-icon">
+            <use xlink:href="img/sprite.svg#add"></use>
+        </svg>
+        Показать больше вариантов
+    </button>
+
+    <label class="form__purpose">
+        <textarea class="form__purpose-textarea" name="purpose" placeholder="Напиши свою учебную цель"
+            required></textarea>
+        <span class="form__purpose-title">
+            Цель урока
+        </span>
+        <span class="form__purpose-error error-message">Превышено количество символов</span>
+        <span class="form__purpose-count character-count">0 / 200</span>
+    </label>
+
+    <div class="form__controls">
+        <button class="btn-reset form__btn form__btn-back">Назад</button>
+        <button class="btn-reset form__btn form__btn-next" disabled>Следующий шаг</button>
+    </div>
+</form> -->
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.bundle.js"></script>
+</body>
+
+</html>
